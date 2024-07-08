@@ -117,115 +117,7 @@
                     </span>
                 </ng-container>
             </div>
-            
-            <!-- <mat-form-field class="example-full-width" appearance="fill">
-                <mat-label>First Name</mat-label>
-                <input matInput type="text"
-                            name="fname"
-                            id="fname"
-                            ngModel
-                            #fname="ngModel"
-                            pattern="[a-zA-Z]+"
-                            required
-                            minlength="4"
-                            maxlength="10">
-                
-                <span class="text-danger"
-                      *ngIf="fname.invalid && fname.touched && fname.hasError('required')">
-                                  First Name is Required
-                </span>
-                <ng-container *ngIf="fname.dirty">
-                    <span class="text-danger"
-                      *ngIf="fname.hasError('minlength')">
-                            Minimum Length of First Name should be {{fname.errors?.['minlength'].requiredLength}}
-                         and actual length is {{fname.errors?.['minlength'].actualLength}}
-                    </span>
-                    <span class="text-danger"
-                      *ngIf="fname.hasError('pattern')">
-                            First Name Should not include Special Character & Number
-                    </span>
-                </ng-container>
 
-            </mat-form-field>
-    
-            <mat-form-field class="example-full-width" appearance="fill">
-                <mat-label>Last Name</mat-label>
-                <input matInput type="text"
-                            name="lname"
-                            id="lname"
-                            ngModel
-                            #lname="ngModel"
-                            pattern="[a-zA-Z]+"
-                            required
-                            minlength="2"
-                            maxlength="10">
-                
-                <span class="text-danger"
-                      *ngIf="lname.invalid && lname.touched && lname.hasError('required')">
-                                  Last Name is Required
-                </span>
-                <ng-container *ngIf="lname.dirty">
-                    <span class="text-danger"
-                      *ngIf="lname.hasError('minlength')">
-                            Minimum Length of Last Name should be {{lname.errors?.['minlength'].requiredLength}}
-                         and actual length is {{lname.errors?.['minlength'].actualLength}}
-                    </span>
-                    <span class="text-danger"
-                      *ngIf="lname.hasError('pattern')">
-                            Last Name Should not include Special Character & Number
-                    </span>
-                </ng-container>
-            </mat-form-field>
-    
-            <mat-form-field class="example-full-width" appearance="fill">
-                <mat-label>Email ID</mat-label>
-                <input matInput type="text"
-                            name="email"
-                            id="email"
-                            ngModel
-                            #email="ngModel"
-                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-                            required>
-                
-                <span class="text-danger"
-                    *ngIf="email.invalid && email.touched && email.hasError('required')">
-                    Email Id is required
-                </span>
-                <span class="text-danger"
-                      *ngIf="email.dirty && email.hasError('pattern')">
-                            Invalid Email Id
-                </span>
-            </mat-form-field>
-    
-            <mat-form-field class="example-full-width" appearance="fill">
-                <mat-label>Contact</mat-label>
-                <input matInput type="text"
-                            name="contact"
-                            id="contact"
-                            ngModel
-                            #contact="ngModel"
-                            pattern="^\d*$"
-                            required
-                            minlength="10"
-                            maxlength="10">
-                
-                <span class="text-danger"
-                    *ngIf="contact.invalid && contact.touched && contact.hasError('required')">
-                    Contact is required
-                </span>
-                <ng-container *ngIf="contact.dirty">
-                    <span class="text-danger"
-                      *ngIf="contact.hasError('minlength')">
-                            Minimum Length of First Name should be {{contact.errors?.['minlength'].requiredLength}}
-                         and actual length is {{contact.errors?.['minlength'].actualLength}}
-                    </span>
-                    <span class="text-danger"
-                      *ngIf="contact.hasError('pattern')">
-                            First Name Should not include Special Character & Number
-                    </span>
-                </ng-container>
-            </mat-form-field> -->
-    
             <div class="form-group">
                 <label for="gender">Gender</label>
                 <div class="ml-3" *ngFor="let g of gender">
@@ -235,6 +127,7 @@
                     </label>
                 </div>
             </div>
+            
             <button mat-stroked-button color="primary" [disabled]="logIn.invalid" class="btn-block">Add Student</button>
         </form>
     </mat-card-content>
